@@ -8,16 +8,20 @@
 </head>
 <body>
 
-  <button id='one'>Roll One Die</button>
-
+  <button type="button" id='one' onclick="rollOne()">Roll One Die</button>
+  <span id='oneR'></span>
   <br>
+  <hr>
 
-  <button id='multiple'> Roll Multiples</button>
-  <input type="text" name="" value="">
-
+  <button id='multiple' onclick="rollCup()"> Roll a cup of Dice</button>
+  <input type="text" placeholder="How many dice to roll" id='cups'>
+  <span id='mulR'></span>
   <br>
-  <button type="button" id='loaded'>Roll Loaded Die</button>
+  <hr>
 
+  <button type="button" id='loaded' onclick="rolload()">Roll Loaded Die</button>
+  <input type="text" placeholder="What is your loaded die" id='load'>
+  <span id='loadR'></span>
 
   <script src="./main.js" charset="utf-8"></script>
 </body>
